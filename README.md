@@ -25,17 +25,19 @@ sudo service mysql restart
 ```
 
 # Create MySQL DB, User
+```
 sudo mysql -u root -p
 CREATE DATABASE school DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 GRANT ALL ON school.* TO 'trainee'@'localhost' IDENTIFIED BY 'Da@y=001';
 FLUSH PRIVILEGES;
 EXIT;
-
+```
 
 # Install PHP & check version 
+```
 sudo apt install php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php
 php --version
-
+```
 
 # Install PHPmyAdmin
 ```
